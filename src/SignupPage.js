@@ -34,7 +34,7 @@ export default function SignUp() {
         return;
       }
 
-      const response = await axios.post('https://t-p-cell-blog.vercel.app/api/auth/register', formData);
+      const response = await axios.post('/api/auth/register', formData);
       console.log(response.data);
 
       setFormData({
