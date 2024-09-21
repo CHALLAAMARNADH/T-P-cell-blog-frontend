@@ -31,7 +31,7 @@ const handleSubmit = async (event) => {
   event.preventDefault();
   
   try {
-    const response = await axios.post('https://t-p-cell-blog.vercel.app/api/auth/login', formData); 
+    const response = await axios.post('/api/auth/login', formData); 
     const { data } = response; // Destructure the 'data' property from the response
     console.log(data); // Log the received data to verify its contents
 
